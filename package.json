@@ -1,0 +1,17 @@
+{
+    "name": "logging",
+    "description": "Logs events in deployment and monitoring suite",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node logging",
+        "test": "./node_modules/mocha/bin/mocha -R xunit | grep \"<\" > test-reports.xml"
+    },
+    "dependencies": {
+        "node-redis-pubsub-fork": "*",
+        "mongojs": "*"
+    },
+    "devDependencies": {
+        "mocha": "*"
+    }
+}
