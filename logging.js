@@ -1,4 +1,4 @@
-var databaseUrl = "logDB"; // "username:password@example.com/mydb"
+var databaseUrl = "logDB";
 var collections = ["healthcheck", "discovery", "deployer", "alerting", "all"];
 var db = require("mongojs").connect(databaseUrl, collections);
 var redisPubSub = require("node-redis-pubsub-fork"),
